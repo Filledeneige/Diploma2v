@@ -1,0 +1,602 @@
+@font-face {
+	font-family: 'GothicI';
+	font-style: normal;
+	font-weight: normal;
+	src: local('GothicI'), local('GothicI'), url('./fonts/gothici.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: local('Montserrat'), local('Montserrat-Regular'), url('./fonts/montserrat.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('./fonts/montserratbold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+html {
+	font-family: 'Montserrat', 'GothicI';
+	margin: 0px;
+	padding: 0px;
+	background-color: #000000;
+}
+
+body {
+	min-width: 320px;
+}
+
+.p {
+	font-size: 14px;
+	color: #FFFDFD;
+	font-weight: normal;
+}
+
+.h1 {
+	display: none;
+}
+
+.container {
+	display: block;
+	position: relative;
+	margin: auto;
+	background-color: #000000;
+	background-repeat: repeat;
+	background-image: url("../imges/14_bg1.jpg");
+	max-width: 1140px;
+	box-sizing: border-box;
+	margin-top: 0px;
+}
+
+
+/*! соцсети сбоку - десктоп - начало */
+
+.side:after {
+	height: calc(50% - 80px);
+	width: 1px;
+	background-color: red;
+	margin: 5px;
+	content: " ";
+}
+.side:before {
+	height: calc(50% - 80px);
+	width: 1px;
+	background-color: red;
+	margin: 5px;
+	content: " ";
+}
+.side {
+	display: flex;
+	flex-wrap: wrap;
+	width: 53px;
+	position: fixed;
+	justify-content: center;
+	vertical-align: middle;
+	top: 50px;
+	right: 10px;
+	margin-right: 10px;
+	height: 100%;
+	list-style: none;
+}
+.fb {
+	height: 43px;
+	width: 43px;
+	background-image: url("../imges/fb.png");
+	background-position: center;
+	margin: 5px;
+		cursor: pointer;
+}
+.vk {
+	height: 43px;
+	width: 43px;
+	background-image: url("../imges/Vk.png");
+	background-position: center;
+	margin: 5px;
+	cursor: pointer;
+}
+.inst {
+	height: 43px;
+	width: 43px;
+	background-image: url("../imges/inst.png");
+	background-position: center;
+	margin: 5px;
+		cursor: pointer;
+}
+/*! соцсети сбоку - десктоп - конец */
+
+
+.header{
+	display:flex;
+	flex-wrap: wrap;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-left: 20px;
+	padding-right: 20px;
+	position: fixed;
+	max-width: 1140px;
+	width: 100%;
+	height: 70px;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.name{
+	display: inline-block;
+	font-family: 'UnifrakturMaguntia'; 
+	font-size: 60px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.top-right{
+	display: flex;
+	align-items: center;
+}
+
+.ico{
+	display: inline-flex;
+	margin-right: 8px;
+}
+
+.adress-txt{
+	display: inline-flex;
+	justify-content: center;
+	margin-right: 20px;
+	font-size: 13px;
+}
+
+.language{
+	display: inline-block;
+	align-items: center;
+  height: 34px;
+}
+
+.language select {
+  background: transparent;
+  font-size: 20px;
+  height: 34px;
+	border: 0px;
+	color: white;
+}
+
+.red-txt {
+	color: red;
+}
+
+
+@media (min-width:767px) {
+	.card-content-mob, .features-of-quest-mob {
+		display: none;
+	}
+}
+
+.quest {
+	padding-top: 80px;
+	box-sizing: border-box;
+	display: block;
+	max-width: 1140px;
+	margin-bottom: 50px;
+}
+
+.main-container {
+	display:flex;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1140px;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+.card-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 280px;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.card-img-container{
+	height:  auto;
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+
+img.card-img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: left;
+}
+
+.button1 {
+	background-color: red;
+	text-transform: uppercase;
+	color: white;
+	border: 0px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 9px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-right: 15px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.button1:hover {
+	background-color: #7d03d2;
+	transition: all 2s ease;
+	_height: 40px;
+}
+
+.h3{
+	text-align: center;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.features-of-quest {
+	background-color: rgba(233, 20, 20, 0.13);
+	padding: 20px 20px 20px 20px;
+	display: flex;
+}
+
+.features-of {
+	width: 25%;
+	text-align: center;
+	padding: 20px;
+}
+
+.about {
+	padding: 20px 20px 20px 20px;
+}
+
+.h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 41px;
+	display: flex;
+	align-items: center;
+	color: #E91414;
+	margin-bottom: -2px;
+	margin-top: 40px;
+}
+
+
+.frame {
+	display: flex;
+	justify-content: center;
+	width: 47%;
+	margin: 1%;
+	box-sizing: border-box;
+	border-radius: 11px;
+	text-align: center;
+	overflow: hidden;
+	object-fit: cover;
+	border: 1px solid rgba(0,0,0,.0);
+
+} 
+.frame:hover {
+	border: 1px solid red;
+	box-sizing: border-box;
+}
+
+
+img.photo__preview{
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 11px;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+
+.section__photo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	max-width: 1140px;
+	width: 100%;
+	margin: -1%;
+	padding-top: 20px;
+}
+
+.review-content { 
+	margin: 0px; 
+	text-align: center; 
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.autor {
+	color: #848484;
+}
+
+
+.field {
+	height: 40px;
+	width: 230px;
+	border-radius: 11px;
+	border: 1px solid red;
+	background-color:rgba(87, 76, 76, 1);
+	padding-left: 10px;
+	box-sizing: border-box;
+	color: aliceblue;
+}
+
+input::-webkit-input-placeholder { 
+	color: white; 
+}
+
+.subscription-text{
+	max-width: 400px;
+	align-content:center;
+	justify-content: center;
+}
+.sub-group-bott {
+			display: flex;
+}
+
+.subscription-group{
+		display: flex;
+}
+.subscription{
+	display: flex;
+	color: white;
+	height: 40px;
+}
+
+.c{
+	display: flex;
+	align-items: flex-end;
+	margin-right: 20px;
+	font-size: 9px;
+}
+.footer-adr{
+	display: flex;
+	right: 10px;
+	align-items: center;
+	margin-left: 0;
+	margin-top: 30px;
+	_height: 50px;
+}
+
+@media (max-width: 766px) {
+	.side, .card-content, .top-right, footer.features-of-quest {
+		display: none;
+		position: fixed;
+	}
+	
+	.h2 {
+		justify-content: center;
+		text-align: center;
+	}
+	
+	img.card-img {
+		width: 100%;
+}
+	.card-img-container{
+	width: 100%;
+	padding-top: 0px;
+}
+	
+.name{
+	display: inline-block;
+	margin: auto;
+}
+	.main-container{
+		display: block;
+		text-align: center;
+	}
+	.features-of-quest {
+		max-width: 766px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0px;
+	}
+	.features-of {
+		_background-color: grey;
+		width: 256px;
+		display: block;
+		margin: auto;
+	}
+
+.frame {
+	width: 96%;
+} 
+
+	.features-of-quest-mob {
+	background-color: rgba(233, 20, 20, 0.13);
+	padding: 10px 10px 20px 1px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-size: 18px;
+}
+	.footer-txt-mob {
+		padding: 20px;
+	}
+	.c-mob{
+	right: 20px;
+	text-align: right;
+	font-size: 9px;
+	margin-top: 30px;
+}
+	.footer-txt-mob-tel {
+		text-decoration: underline;
+		margin: 30px;
+		font-size: 24px;
+	}
+	.subscription {
+		display: flex;
+		justify-content: center;
+		margin: 0px;
+	}
+	
+	.soc_mob {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 40px;
+		list-style: none;
+		padding: 0px;
+	}
+}
+
+
+@media (max-width: 420px) {
+	.subscription-group{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+}
+.subscription{
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	height: 80px;
+}
+
+}
+
+
+/*! слайдер */
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .slider__item {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    .slider__control {
+      position: absolute;
+      top: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .slider__control_show {
+      display: flex;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .slider__item>div {
+      text-align: center;
+    }
+/*! слайдер */
+
+
+@media (max-width: 766px) {
+	   .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+}
+
+@media (max-width:1150px) and (min-width:767px) {
+	.features-of-quest {
+		padding-right: 60px;
+		box-sizing: border-box;
+	}
+	.about {
+				padding-right: 60px;
+		box-sizing: border-box;
+	}
+	.features-of-quest {
+		padding-right: 60px;
+		box-sizing: border-box;
+	}
+	}
+
+
+@media (max-width:991px) and (min-width:767px) {
+
+.subscription-text{
+	display: block;
+	max-width: 800px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+.sub-group-bott {
+		display: flex;
+}
+
+.subscription-group{
+		display: flex;
+}
+.subscription{
+	display: block;
+	color: white;
+	height: 40px;
+}
+	}
